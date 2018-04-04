@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>tusk</title>
+    <meta name="generator" content="Hugo 0.37.1" />
+
+    
+    <meta name="description" content="A modern task runner">
+    
+    <link rel="canonical" href="https://rliebz.github.io/hugo-pages-test/">
+    
+    <meta name="author" content="Robert Liebowitz">
+    
+
+    <meta property="og:url" content="https://rliebz.github.io/hugo-pages-test/">
+    <meta property="og:title" content="tusk">
+    
+    <meta name="apple-mobile-web-app-title" content="tusk">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://rliebz.github.io/hugo-pages-test/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://rliebz.github.io/hugo-pages-test/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('https://rliebz.github.io/hugo-pages-test/fonts/icon.eot');
+        src: url('https://rliebz.github.io/hugo-pages-test/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('https://rliebz.github.io/hugo-pages-test/fonts/icon.woff')
+               format('woff'),
+             url('https://rliebz.github.io/hugo-pages-test/fonts/icon.ttf')
+               format('truetype'),
+             url('https://rliebz.github.io/hugo-pages-test/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://rliebz.github.io/hugo-pages-test/stylesheets/application.css">
+    <link rel="stylesheet" href="https://rliebz.github.io/hugo-pages-test/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://rliebz.github.io/hugo-pages-test/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://rliebz.github.io/hugo-pages-test/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="https://rliebz.github.io/hugo-pages-test/javascripts/modernizr.js"></script>
+
+    
+    <link href="https://rliebz.github.io/hugo-pages-test/index.xml" rel="alternate" type="application/rss+xml" title="tusk" />
+    <link href="https://rliebz.github.io/hugo-pages-test/index.xml" rel="feed" type="application/rss+xml" title="tusk" />
+    
+
+  </head>
+  <body class="palette-primary-teal palette-accent-deep-orange">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        tusk
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/rliebz" title="@rliebz on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/rliebz/tusk" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>tusk <span class="version">dev</span></strong>
+        
+          <br>
+          rliebz/tusk
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/rliebz/tusk/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/rliebz/tusk/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="https://rliebz.github.io/hugo-pages-test/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/rliebz" target="_blank" title="@rliebz on GitHub">
+              @rliebz on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:rliebz@gmail.com" title="Email of rliebz@gmail.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			
+				<h1>tusk </h1>
+
+				
+
+<p><a href="https://github.com/rliebz/tusk/releases"><img src="https://img.shields.io/github/release/rliebz/tusk.svg" alt="GitHub release" /></a>
+<a href="https://circleci.com/gh/rliebz/tusk/tree/master"><img src="https://img.shields.io/circleci/project/github/rliebz/tusk/master.svg" alt="CircleCI" /></a>
+<a href="https://ci.appveyor.com/project/RobertLiebowitz/tusk"><img src="https://img.shields.io/appveyor/ci/RobertLiebowitz/tusk/master.svg?label=windows" alt="AppVeyor" /></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license" /></a>
+<a href="https://gitter.im/tusk-cli/tusk"><img src="https://img.shields.io/gitter/room/tusk-cli/tusk.svg" alt="Gitter" /></a></p>
+
+<p>Tusk is a yaml-based task runner. By creating a <code>tusk.yml</code> in the root of a
+repository, Tusk becomes a custom command line tool with minimal configuration.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+<li><strong>Customizable</strong>: Specify your own tasks and options with support for command-line
+flags, environment variables, conditional logic, and more.</li>
+<li><strong>Explorable</strong>: With help documentation generated dynamically and support for Bash
+and Zsh tab completion available, all the help you need to get started in a
+project is available straight from the command line.</li>
+<li><strong>Accessible</strong>: Built for usability with a simple YAML configuration, familiar
+syntax for passing options, Bash-like variable interpolation, and a colorful
+terminal output.</li>
+<li><strong>Zero Dependencies</strong>: All you need is a single binary file to get started on
+Linux, macOS, or Windows.</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<h3 id="installation">Installation</h3>
+
+<p>The latest version can be installed from the <a href="https://github.com/rliebz/tusk/releases">releases page</a>.</p>
+
+<p>On macOS, installation is also available through <a href="https://brew.sh">homebrew</a>:</p>
+
+<pre><code class="language-bash">brew install rliebz/tusk/tusk
+</code></pre>
+
+<h3 id="usage">Usage</h3>
+
+<p>Create a <code>tusk.yml</code> file in the root of a project repository:</p>
+
+<pre><code class="language-yaml">tasks:
+  greet:
+    usage: Say hello to someone
+    options:
+      name:
+        usage: A person to say &quot;Hello&quot; to
+        default: World
+    run: echo &quot;Hello, ${name}!&quot;
+</code></pre>
+
+<p>As long as there is a <code>tusk.yml</code> file in the working or any parent directory,
+tasks can be run:</p>
+
+<pre><code>$ tusk greet --name friend
+Running: echo &quot;Hello, friend!&quot;
+Hello, friend!
+</code></pre>
+
+<p>Help messages are dynamically generated based on the YAML configuration:</p>
+
+<pre><code>$ tusk --help
+tusk - a task runner built with simplicity in mind
+
+Usage:
+   tusk [global options] &lt;task&gt; [task options]
+
+Tasks:
+   greet  Say hello to someone
+
+Global Options:
+   -f, --file file  Set file to use as the config file
+   -h, --help       Show help and exit
+   ...
+</code></pre>
+
+<p>Individual tasks have help messages as well:</p>
+
+<pre><code>$ tusk greet --help
+tusk greet - Say hello to someone
+
+Usage:
+   tusk greet [options]
+
+Options:
+   --name value  A person to say &quot;Hello&quot; to
+</code></pre>
+
+<p>For more detailed examples, check out <a href="example/example.yml"><code>example/example.yml</code></a>
+or the project&rsquo;s own <a href="tusk.yml"><code>tusk.yml</code></a> file.</p>
+
+<h2 id="the-spec">The Spec</h2>
+
+<h3 id="tasks">Tasks</h3>
+
+<p>The core of every <code>tusk.yml</code> file is a list of tasks. Tasks are declared at the
+top level of the <code>tusk.yml</code> file and include a list of tasks.</p>
+
+<p>For the following tasks:</p>
+
+<pre><code class="language-yaml">tasks:
+  hello:
+    run: echo &quot;Hello, world!&quot;
+  goodbye:
+    run: echo &quot;Goodbye, world!&quot;
+</code></pre>
+
+<p>The commands can be run with no additional configuration:</p>
+
+<pre><code>$ tusk hello
+Running: echo &quot;Hello, world!&quot;
+Hello, world!
+</code></pre>
+
+<p>Tasks can be documented with a one-line <code>usage</code> string and a slightly longer
+<code>description</code>. This information will be displayed in help messages:</p>
+
+<pre><code class="language-yaml">tasks:
+  hello:
+    usage: Say hello to the world
+    description: |
+      This command will echo &quot;Hello, world!&quot; to the user. There's no
+      surprises here.
+    run: echo &quot;Hello, world!&quot;
+  goodbye:
+    run: echo &quot;Goodbye, world!&quot;
+</code></pre>
+
+<h3 id="run">Run</h3>
+
+<p>The behavior of a task is defined in its <code>run</code> clause. A <code>run</code> clause can be
+used for commands, sub-tasks, or setting environment variables. Although each
+<code>run</code> item can only perform one of these actions, they can be run in succession
+to handle complex scenarios.</p>
+
+<h4 id="command">Command</h4>
+
+<p>In its simplest form, <code>run</code> can be given a string or list of strings to be
+executed serially as shell commands:</p>
+
+<pre><code class="language-yaml">tasks:
+  hello:
+    run: echo &quot;Hello!&quot;
+</code></pre>
+
+<p>This is a shorthand syntax for the following:</p>
+
+<pre><code class="language-yaml">tasks:
+  hello:
+    run:
+      - command: echo &quot;Hello!&quot;
+</code></pre>
+
+<p>If any of the run commands execute with a non-zero exit code, Tusk will
+immediately exit with the same exit code without executing any other commands.</p>
+
+<p>For executing shell commands, the interpreter used will be the value of the
+<code>SHELL</code> environment variable. If no environment variable is set, the default is
+<code>sh</code>.</p>
+
+<h4 id="set-environment">Set Environment</h4>
+
+<p>The second type of action a <code>run</code> clause can perform is setting or unsetting
+environment variables. To do so, simply define a map of environment variable
+names to their desired values:</p>
+
+<pre><code class="language-yaml">tasks:
+  hello:
+    options:
+      proxy-url:
+        default: http://proxy.example.com
+    run:
+      - set-environment:
+          http_proxy: ${proxy-url}
+          https_proxy: ${proxy-url}
+          no_proxy: ~
+      - command: curl http://example.com
+</code></pre>
+
+<p>Passing <code>~</code> or <code>null</code> to an environment variable will explicitly unset it, while
+passing an empty string will set it to an empty string.</p>
+
+<h4 id="sub-tasks">Sub-Tasks</h4>
+
+<p>Run can also execute previously-defined tasks:</p>
+
+<pre><code class="language-yaml">tasks:
+  one:
+    run: echo &quot;Inside one&quot;
+  two:
+    run:
+      - task: one
+      - command: echo &quot;Inside two&quot;
+</code></pre>
+
+<p>For any option that a sub-task defines, the parent task can pass a value, which
+is treated the same way as passing by command-line would be. To do so, use the
+long definition of a sub-task:</p>
+
+<pre><code class="language-yaml">tasks:
+  greet:
+    options:
+      person:
+        default: World
+    run: echo &quot;Hello, ${person}!&quot;
+  greet-myself:
+    run:
+      task:
+        name: greet
+        options:
+          person: me
+</code></pre>
+
+<p>In cases where a sub-task may not be useful on its own, define it as private to
+prevent it from being invoked directly from the command-line. For example:</p>
+
+<pre><code class="language-yaml">tasks:
+  configure-environment:
+    private: true
+    run:
+      set-environment: {APP_ENV: dev}
+  serve:
+    run:
+      - task: configure-environment
+      - command: python main.py
+</code></pre>
+
+<h3 id="when">When</h3>
+
+<p>For conditional execution, <code>when</code> clauses are available.</p>
+
+<pre><code class="language-yaml">run:
+  when:
+    os: linux
+  command: echo &quot;This is a linux machine&quot;
+</code></pre>
+
+<p>In a <code>run</code> clause, any item with a true <code>when</code> clause will execute. There are
+five different checks supported:</p>
+
+<ul>
+<li><code>command</code> (string): Execute if the command runs with an exit code of <code>0</code>.</li>
+<li><code>exists</code> (string): Execute if the file exists.</li>
+<li><code>os</code> (list): Execute if the operating system matches any one from the list.</li>
+<li><code>environment</code> (map[string -&gt; string]): Execute if the environment variable
+matches the value it maps to. To check if a variable is not set, the value
+should be <code>~</code> or <code>null</code>.</li>
+<li><code>equal</code> (map[string -&gt; string]): Execute if the given option equals the value
+it maps to.</li>
+<li><code>not-equal</code> (map[string -&gt; string]): Execute if the given option does not
+equal the value it maps to.</li>
+</ul>
+
+<p>The <code>when</code> clause supports any number of different checks as a list, where each
+check must pass individually for the clause to evaluate to true. Here is a more
+complicated example of how <code>when</code> can be used:</p>
+
+<pre><code class="language-yaml">tasks:
+  echo:
+    options:
+      cat:
+        usage: Cat a file
+    run:
+      - when:
+          os:
+            - linux
+            - darwin
+        command: echo &quot;This is a unix machine&quot;
+      - when:
+          - exists: my_file.txt
+          - equal: {cat: true}
+          - command: command -v cat
+        command: cat my_file.txt
+</code></pre>
+
+<h3 id="options">Options</h3>
+
+<p>Tasks may have options that are passed as GNU-style flags. The following
+configuration will provide <code>-n, --name</code> flags to the CLI and help documentation,
+which will then be interpolated:</p>
+
+<pre><code class="language-yaml">tasks:
+  greet:
+    options:
+      name:
+        usage: The person to greet
+        short: n
+        environment: GREET_NAME
+        default: World
+    run: echo &quot;Hello, ${name}!&quot;
+</code></pre>
+
+<p>The above configuration will evaluate the value of <code>name</code> in order of highest
+priority:</p>
+
+<ol>
+<li>The value passed by command line flags (<code>-n</code> or <code>--name</code>)</li>
+<li>The value of the environment variable (<code>GREET_NAME</code>), if set</li>
+<li>The value set in default</li>
+</ol>
+
+<h4 id="option-types">Option Types</h4>
+
+<p>Options can be of the types <code>string</code>, <code>integer</code>, <code>float</code>, or <code>boolean</code>, using
+the zero-value of that type as the default if not set. Options without types
+specified are considered strings.</p>
+
+<p>For boolean values, the flag should be passed by command line without any
+arugments. In the following example:</p>
+
+<pre><code class="language-yaml">tasks:
+  greet:
+    options:
+      loud:
+        type: bool
+    run:
+      - when:
+          equal: {loud: true}
+        command: echo &quot;HELLO!&quot;
+      - when:
+          equal: {loud: false}
+        command: echo &quot;Hello.&quot;
+</code></pre>
+
+<p>The flag should be passed as such:</p>
+
+<pre><code class="language-bash">tusk greet --loud
+</code></pre>
+
+<p>This means that for an option that is true by default, the only way to disable
+it is with the following syntax:</p>
+
+<pre><code class="language-bash">tusk greet --loud=false
+</code></pre>
+
+<p>Of course, options can always be defined in the reverse manner to avoid this
+issue:</p>
+
+<pre><code class="language-yaml">options:
+  no-loud:
+    type: bool
+</code></pre>
+
+<h4 id="option-defaults">Option Defaults</h4>
+
+<p>Much like <code>run</code> clauses accept a shorthand form, passing a string to <code>default</code>
+is shorthand. The following options are exactly equivalent:</p>
+
+<pre><code class="language-yaml">options:
+  short:
+    default: foo
+  long:
+    default:
+      - value: foo
+</code></pre>
+
+<p>A <code>default</code> clause can also register the <code>stdout</code> of a command as its value:</p>
+
+<pre><code class="language-yaml">options:
+  os:
+    default:
+      command: uname -s
+</code></pre>
+
+<p>A <code>default</code> clause also accepts a list of possible values with a corresponding
+<code>when</code> clause. The first <code>when</code> that evaluates to true will be used as the
+default value, with an omitted <code>when</code> always considered true.</p>
+
+<p>In this example, linux users will have the name <code>Linux User</code>, while the default
+for all other OSes is <code>User</code>:</p>
+
+<pre><code class="language-yaml">options:
+  name:
+    default:
+      - when:
+          os: linux
+        value: Linux User
+      - value: User
+</code></pre>
+
+<h4 id="option-values">Option Values</h4>
+
+<p>An option can specify which values are considered valid:</p>
+
+<pre><code class="language-yaml">options:
+  number:
+    default: zero
+    values:
+      - one
+      - two
+      - three
+</code></pre>
+
+<p>Any value passed by command-line flags or environment variables must be one of
+the listed values. Default values, including commands, are excluded from this
+requirement.</p>
+
+<h4 id="required-options">Required Options</h4>
+
+<p>Options may be required if there is no sane default value. For a required flag,
+the task will not execute unless the flag is passed:</p>
+
+<pre><code class="language-yaml">options:
+  file:
+    required: true
+</code></pre>
+
+<p>A required option cannot be private or have any default values.</p>
+
+<h4 id="private-options">Private Options</h4>
+
+<p>Sometimes it may be desirable to have a variable that cannot be directly
+modified through command-line flags. In this case, use the <code>private</code> option:</p>
+
+<pre><code class="language-yaml">options:
+  user:
+    private: true
+    default:
+      command: whoami
+</code></pre>
+
+<p>A private option will not accept environment variables or command line flags,
+and it will not appear in the help documentation.</p>
+
+<h4 id="shared-options">Shared Options</h4>
+
+<p>Options may also be defined at the root of the config file to be shared between
+tasks:</p>
+
+<pre><code class="language-yaml">options:
+  name:
+    usage: The person to greet
+    default: World
+
+tasks:
+  hello:
+    run: echo &quot;Hello, ${name}!&quot;
+  goodbye:
+    run: echo &quot;Goodbye, ${name}!&quot;
+</code></pre>
+
+<p>Any shared variables referenced by a task will be exposed by command-line when
+invoking that task. Shared variables referenced by a sub-task will be evaluated
+as needed, but not exposed by command-line.</p>
+
+<h4 id="cli-metadata">CLI Metadata</h4>
+
+<p>It is also possible to create a custom CLI tool for use outside of a project&rsquo;s
+directory by using shell aliases:</p>
+
+<pre><code class="language-bash">alias mycli=&quot;tusk -f /path/to/tusk.yml&quot;
+</code></pre>
+
+<p>In that case, it may be useful to override the tool name and usage text that
+are provided as part of the help documentation:</p>
+
+<pre><code class="language-yaml">name: mycli
+usage: A custom aliased command-line application
+
+tasks:
+  ...
+</code></pre>
+
+<p>The example above will produce the following help documentation:</p>
+
+<pre><code>mycli - A custom aliased command-line application
+
+Usage:
+  mycli [global options] &lt;task&gt; [task options]
+
+Tasks:
+  ...
+</code></pre>
+
+<h4 id="interpolation">Interpolation</h4>
+
+<p>The interpolation syntax for a variable <code>foo</code> is <code>${foo}</code>, meaning any instances
+of <code>${foo}</code> in the configuration file will be replaced with the value of <code>foo</code>
+during execution.</p>
+
+<p>Interpolation is done on a task-by-task basis, meaning options defined in one
+task will not interpolate to any other tasks. For each task, interpolation is
+done iteratively in the order that variables are defined, with shared variables
+being evaluated first. This means that options can reference other options:</p>
+
+<pre><code class="language-yaml">options:
+  name:
+    default: World
+  greeting:
+    default: Hello, ${name}
+
+tasks:
+  greet:
+    run: echo &quot;${greeting}&quot;
+</code></pre>
+
+<p>Because interpolation is not always desirable, as in the case of environment
+variables, <code>$$</code> will escape to <code>$</code> and ignore interpolation. It is also
+possible to use alternative syntax such as <code>$foo</code> to avoid interpolation as
+well. The following two tasks will both use environment variables and not
+attempt interpolation:</p>
+
+<pre><code class="language-yaml">tasks:
+  one:
+    run: Hello, $${USER}
+  two:
+    run: Hello, $USER
+</code></pre>
+
+<p>Interpolation works by substituting the value in the <code>yaml</code> config file, then
+parsing the file after interpolation. This means that variable values with
+newlines or other characters that are relevant to the <code>yaml</code> spec or the <code>sh</code>
+interpreter will need to be considered by the user. This can be as simple as
+using quotes when appropriate.</p>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Set-up instructions for a development environment and contribution guidelines
+can be found in <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+
+			
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  </div>
+
+  
+  
+  <div class="next">
+      <a href="https://rliebz.github.io/hugo-pages-test/tags/" title="Tags">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Tags
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  </div>
+</nav>
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'https:\/\/rliebz.github.io\/hugo-pages-test\/';
+      var repo_id  = 'rliebz\/tusk';
+    
+    </script>
+
+    <script src="https://rliebz.github.io/hugo-pages-test/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
